@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dl2o6oyh54oyl"
+path="res://.godot/imported/machine_wirelessCable.obj-24b3ed0163c53f7d44818cf772a688bb.mesh"
+
+[deps]
+
+files=["res://.godot/imported/machine_wirelessCable.obj-24b3ed0163c53f7d44818cf772a688bb.mesh"]
+
+source_file="res://model/machine_wirelessCable.obj"
+dest_files=["res://.godot/imported/machine_wirelessCable.obj-24b3ed0163c53f7d44818cf772a688bb.mesh", "res://.godot/imported/machine_wirelessCable.obj-24b3ed0163c53f7d44818cf772a688bb.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

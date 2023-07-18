@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dpkh4dl5fsxbw"
+path="res://.godot/imported/corridor_split.obj-89555b59adb40916aec1067d42eed465.mesh"
+
+[deps]
+
+files=["res://.godot/imported/corridor_split.obj-89555b59adb40916aec1067d42eed465.mesh"]
+
+source_file="res://model/corridor_split.obj"
+dest_files=["res://.godot/imported/corridor_split.obj-89555b59adb40916aec1067d42eed465.mesh", "res://.godot/imported/corridor_split.obj-89555b59adb40916aec1067d42eed465.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

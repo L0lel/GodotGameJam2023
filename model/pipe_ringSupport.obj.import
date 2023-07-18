@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://47r77c278m3j"
+path="res://.godot/imported/pipe_ringSupport.obj-127da623df390141af3fcd8805032fda.mesh"
+
+[deps]
+
+files=["res://.godot/imported/pipe_ringSupport.obj-127da623df390141af3fcd8805032fda.mesh"]
+
+source_file="res://model/pipe_ringSupport.obj"
+dest_files=["res://.godot/imported/pipe_ringSupport.obj-127da623df390141af3fcd8805032fda.mesh", "res://.godot/imported/pipe_ringSupport.obj-127da623df390141af3fcd8805032fda.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

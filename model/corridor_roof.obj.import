@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://djdumhtyrc2x1"
+path="res://.godot/imported/corridor_roof.obj-5cb3e3d70f2fc6fd8f97685e30a7580e.mesh"
+
+[deps]
+
+files=["res://.godot/imported/corridor_roof.obj-5cb3e3d70f2fc6fd8f97685e30a7580e.mesh"]
+
+source_file="res://model/corridor_roof.obj"
+dest_files=["res://.godot/imported/corridor_roof.obj-5cb3e3d70f2fc6fd8f97685e30a7580e.mesh", "res://.godot/imported/corridor_roof.obj-5cb3e3d70f2fc6fd8f97685e30a7580e.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

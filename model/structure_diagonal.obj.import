@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bnsrfdo80kxs0"
+path="res://.godot/imported/structure_diagonal.obj-1bed82f92758c8792f47a50cbde51dda.mesh"
+
+[deps]
+
+files=["res://.godot/imported/structure_diagonal.obj-1bed82f92758c8792f47a50cbde51dda.mesh"]
+
+source_file="res://model/structure_diagonal.obj"
+dest_files=["res://.godot/imported/structure_diagonal.obj-1bed82f92758c8792f47a50cbde51dda.mesh", "res://.godot/imported/structure_diagonal.obj-1bed82f92758c8792f47a50cbde51dda.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

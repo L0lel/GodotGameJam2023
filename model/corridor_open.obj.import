@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cjtfv1hbevbl2"
+path="res://.godot/imported/corridor_open.obj-ff045d501487ae28c48c383ada75d578.mesh"
+
+[deps]
+
+files=["res://.godot/imported/corridor_open.obj-ff045d501487ae28c48c383ada75d578.mesh"]
+
+source_file="res://model/corridor_open.obj"
+dest_files=["res://.godot/imported/corridor_open.obj-ff045d501487ae28c48c383ada75d578.mesh", "res://.godot/imported/corridor_open.obj-ff045d501487ae28c48c383ada75d578.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

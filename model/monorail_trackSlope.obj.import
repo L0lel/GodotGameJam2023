@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dnwqo4v3i8hq4"
+path="res://.godot/imported/monorail_trackSlope.obj-1834e896e06f9d6f4f48264758dd3136.mesh"
+
+[deps]
+
+files=["res://.godot/imported/monorail_trackSlope.obj-1834e896e06f9d6f4f48264758dd3136.mesh"]
+
+source_file="res://model/monorail_trackSlope.obj"
+dest_files=["res://.godot/imported/monorail_trackSlope.obj-1834e896e06f9d6f4f48264758dd3136.mesh", "res://.godot/imported/monorail_trackSlope.obj-1834e896e06f9d6f4f48264758dd3136.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

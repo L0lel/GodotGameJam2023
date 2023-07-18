@@ -1,0 +1,174 @@
+[gd_scene load_steps=35 format=3 uid="uid://c4wohwpfx03db"]
+
+[ext_resource type="ArrayMesh" uid="uid://nmtipcar1hgs" path="res://model/monorail_trainFront.obj" id="1_1dh38"]
+[ext_resource type="ArrayMesh" uid="uid://cmh30pabr8iyd" path="res://model/monorail_trainPassenger.obj" id="2_npcw3"]
+[ext_resource type="ArrayMesh" uid="uid://dmnylu3pdyq7m" path="res://model/monorail_trainBox.obj" id="3_dsuyc"]
+[ext_resource type="ArrayMesh" uid="uid://3qfy181cj5tx" path="res://model/monorail_trainCargo.obj" id="4_qbae8"]
+[ext_resource type="ArrayMesh" uid="uid://cy732vljjrypd" path="res://model/monorail_trainFlat.obj" id="5_3bbgj"]
+[ext_resource type="ArrayMesh" uid="uid://4d5eyc1d368u" path="res://model/monorail_trainEnd.obj" id="6_pat0e"]
+[ext_resource type="ArrayMesh" uid="uid://fdrwd4dy4r42" path="res://model/barrels_rail.obj" id="7_lhmi5"]
+[ext_resource type="ArrayMesh" uid="uid://bh0s8hwo6du35" path="res://model/monorail_trackCornerSmall.obj" id="8_rpt16"]
+[ext_resource type="ArrayMesh" uid="uid://dnwqo4v3i8hq4" path="res://model/monorail_trackSlope.obj" id="9_2rdwn"]
+[ext_resource type="ArrayMesh" uid="uid://dlaldlpw4kb0" path="res://model/monorail_trackStraight.obj" id="10_lilxx"]
+[ext_resource type="ArrayMesh" uid="uid://tlpstncv3jgk" path="res://model/monorail_trackSupport.obj" id="11_h0ea2"]
+[ext_resource type="ArrayMesh" uid="uid://dmc8kb5lxhm4j" path="res://model/monorail_trackSupportCorner.obj" id="12_bc13u"]
+[ext_resource type="ArrayMesh" uid="uid://byvghybav8bv2" path="res://model/machine_barrel.obj" id="13_nmrjd"]
+[ext_resource type="ArrayMesh" uid="uid://dfunfvw8w6qxr" path="res://model/machine_barrelLarge.obj" id="14_mixv8"]
+[ext_resource type="ArrayMesh" uid="uid://5sln0l1adw2h" path="res://model/machine_generator.obj" id="15_1fbub"]
+[ext_resource type="ArrayMesh" uid="uid://c2cwwbkglj0lb" path="res://model/machine_generatorLarge.obj" id="16_b6wu4"]
+[ext_resource type="ArrayMesh" uid="uid://cpj1km7occ53n" path="res://model/machine_wireless.obj" id="17_kttt0"]
+[ext_resource type="ArrayMesh" uid="uid://dl2o6oyh54oyl" path="res://model/machine_wirelessCable.obj" id="18_xgs6s"]
+[ext_resource type="ArrayMesh" uid="uid://b6kgkyt4frsrm" path="res://model/rock_crystals.obj" id="19_ohvy0"]
+[ext_resource type="ArrayMesh" uid="uid://blndn73td4o0e" path="res://model/rock_crystalsLargeA.obj" id="20_anpw2"]
+[ext_resource type="ArrayMesh" uid="uid://wa8ffoegfkbs" path="res://model/rock_crystalsLargeB.obj" id="21_y4oci"]
+[ext_resource type="ArrayMesh" uid="uid://b8qdomv0bw1ja" path="res://model/rock_largeA.obj" id="22_1m3j5"]
+[ext_resource type="ArrayMesh" uid="uid://cs7qm2o8wy5hv" path="res://model/rock_largeB.obj" id="23_w6jwt"]
+[ext_resource type="ArrayMesh" uid="uid://duc8xsgkve4pv" path="res://model/rover.obj" id="24_cdfol"]
+[ext_resource type="ArrayMesh" uid="uid://bbn0213dos32c" path="res://model/turret_single.obj" id="26_51a5x"]
+[ext_resource type="ArrayMesh" uid="uid://q6of3fnjsmko" path="res://model/turret_double.obj" id="27_taxuh"]
+[ext_resource type="ArrayMesh" uid="uid://cpmltg3aacunc" path="res://model/rocks_smallA.obj" id="28_uio0j"]
+[ext_resource type="ArrayMesh" uid="uid://bsq27vhvjcydn" path="res://model/rocks_smallB.obj" id="29_a3d7d"]
+[ext_resource type="ArrayMesh" uid="uid://bv7weyetydaap" path="res://model/barrels.obj" id="30_sp7jk"]
+[ext_resource type="ArrayMesh" uid="uid://bskc7jkjlh2by" path="res://model/barrel.obj" id="31_2pn4x"]
+[ext_resource type="ArrayMesh" uid="uid://ckmbfcvt40es3" path="res://model/chimney.obj" id="32_0ww2l"]
+[ext_resource type="ArrayMesh" uid="uid://cf2y62scx1v63" path="res://model/chimney_detailed.obj" id="33_1hmau"]
+[ext_resource type="ArrayMesh" uid="uid://cpppc74uoq67k" path="res://model/crater.obj" id="34_e1625"]
+[ext_resource type="ArrayMesh" uid="uid://dyjnkc86kj6ie" path="res://model/craterLarge.obj" id="35_qhr28"]
+
+[node name="Tiles" type="Node3D"]
+
+[node name="MonorailTrainFront" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1)
+mesh = ExtResource("1_1dh38")
+
+[node name="MonorailTrainPassenger" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -1)
+mesh = ExtResource("2_npcw3")
+
+[node name="MonorailTrainBox" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+mesh = ExtResource("3_dsuyc")
+
+[node name="MonorailTrainCargo" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -2)
+mesh = ExtResource("4_qbae8")
+
+[node name="MonorailTrainFlat" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -3)
+mesh = ExtResource("5_3bbgj")
+
+[node name="MonorailTrainEnd" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -4)
+mesh = ExtResource("6_pat0e")
+
+[node name="BarrelsRail" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 1)
+mesh = ExtResource("7_lhmi5")
+
+[node name="MonorailTrackCornerSmall" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+mesh = ExtResource("8_rpt16")
+
+[node name="MonorailTrackSlope" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -1)
+mesh = ExtResource("9_2rdwn")
+
+[node name="MonorailTrackStraight" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -2)
+mesh = ExtResource("10_lilxx")
+
+[node name="MonorailTrackSupport" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -3)
+mesh = ExtResource("11_h0ea2")
+
+[node name="MonorailTrackSupportCorner" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -4)
+mesh = ExtResource("12_bc13u")
+
+[node name="MachineBarrel" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 1)
+mesh = ExtResource("13_nmrjd")
+
+[node name="MachineBarrelLarge" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 0)
+mesh = ExtResource("14_mixv8")
+
+[node name="MachineGenerator" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -1)
+mesh = ExtResource("15_1fbub")
+
+[node name="MachineGeneratorLarge" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -2)
+mesh = ExtResource("16_b6wu4")
+
+[node name="MachineWireless" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -3)
+mesh = ExtResource("17_kttt0")
+
+[node name="MachineWirelessCable" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -4)
+mesh = ExtResource("18_xgs6s")
+
+[node name="RockCrystals" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 1)
+mesh = ExtResource("19_ohvy0")
+
+[node name="RockCrystalsLargeA" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+mesh = ExtResource("20_anpw2")
+
+[node name="RockCrystalsLargeB" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -1)
+mesh = ExtResource("21_y4oci")
+
+[node name="RockLargeA" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -2)
+mesh = ExtResource("22_1m3j5")
+
+[node name="RockLargeB" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -3)
+mesh = ExtResource("23_w6jwt")
+
+[node name="Rover" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -4)
+mesh = ExtResource("24_cdfol")
+
+[node name="TurretSingle" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 0)
+mesh = ExtResource("26_51a5x")
+
+[node name="TurretDouble" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, -1)
+mesh = ExtResource("27_taxuh")
+
+[node name="RocksSmallA" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, -2)
+mesh = ExtResource("28_uio0j")
+
+[node name="RocksSmallB" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, -3)
+mesh = ExtResource("29_a3d7d")
+
+[node name="Barrels" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, -4)
+mesh = ExtResource("30_sp7jk")
+
+[node name="Barrel" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -4)
+mesh = ExtResource("31_2pn4x")
+
+[node name="Chimney" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -3)
+mesh = ExtResource("32_0ww2l")
+
+[node name="ChimneyDetailed" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -2)
+mesh = ExtResource("33_1hmau")
+
+[node name="Crater" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -1)
+mesh = ExtResource("34_e1625")
+
+[node name="CraterLarge" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 0)
+mesh = ExtResource("35_qhr28")

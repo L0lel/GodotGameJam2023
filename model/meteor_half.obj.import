@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cvy4asqn8dv5h"
+path="res://.godot/imported/meteor_half.obj-920f37361426d96816412cda5755b020.mesh"
+
+[deps]
+
+files=["res://.godot/imported/meteor_half.obj-920f37361426d96816412cda5755b020.mesh"]
+
+source_file="res://model/meteor_half.obj"
+dest_files=["res://.godot/imported/meteor_half.obj-920f37361426d96816412cda5755b020.mesh", "res://.godot/imported/meteor_half.obj-920f37361426d96816412cda5755b020.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
