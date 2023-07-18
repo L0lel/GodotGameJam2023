@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://debmrl86hwmog"
+path="res://.godot/imported/pipe_ring.obj-39b3071d163e9eac94140d6edb0e9338.mesh"
+
+[deps]
+
+files=["res://.godot/imported/pipe_ring.obj-39b3071d163e9eac94140d6edb0e9338.mesh"]
+
+source_file="res://model/pipe_ring.obj"
+dest_files=["res://.godot/imported/pipe_ring.obj-39b3071d163e9eac94140d6edb0e9338.mesh", "res://.godot/imported/pipe_ring.obj-39b3071d163e9eac94140d6edb0e9338.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

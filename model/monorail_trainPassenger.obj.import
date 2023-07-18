@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cmh30pabr8iyd"
+path="res://.godot/imported/monorail_trainPassenger.obj-850a60ab59f97edc9948e441f36940ac.mesh"
+
+[deps]
+
+files=["res://.godot/imported/monorail_trainPassenger.obj-850a60ab59f97edc9948e441f36940ac.mesh"]
+
+source_file="res://model/monorail_trainPassenger.obj"
+dest_files=["res://.godot/imported/monorail_trainPassenger.obj-850a60ab59f97edc9948e441f36940ac.mesh", "res://.godot/imported/monorail_trainPassenger.obj-850a60ab59f97edc9948e441f36940ac.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

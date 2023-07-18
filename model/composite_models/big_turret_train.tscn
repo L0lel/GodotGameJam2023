@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://bj0rr8qat6sjp"]
+
+[ext_resource type="ArrayMesh" uid="uid://cy732vljjrypd" path="res://model/monorail_trainFlat.obj" id="1_p3ckj"]
+[ext_resource type="ArrayMesh" uid="uid://q6of3fnjsmko" path="res://model/turret_double.obj" id="2_oj0iu"]
+
+[node name="bigTurretTrain" type="Node3D"]
+
+[node name="MonorailTrainFlat" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_p3ckj")
+
+[node name="TurretDouble" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0.2, 0)
+mesh = ExtResource("2_oj0iu")

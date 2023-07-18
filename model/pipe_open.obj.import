@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://8ehhxfx7vaiw"
+path="res://.godot/imported/pipe_open.obj-a027bf74d0c5bf7a5dcb7c8c83300620.mesh"
+
+[deps]
+
+files=["res://.godot/imported/pipe_open.obj-a027bf74d0c5bf7a5dcb7c8c83300620.mesh"]
+
+source_file="res://model/pipe_open.obj"
+dest_files=["res://.godot/imported/pipe_open.obj-a027bf74d0c5bf7a5dcb7c8c83300620.mesh", "res://.godot/imported/pipe_open.obj-a027bf74d0c5bf7a5dcb7c8c83300620.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://d13mw5u56p325"
+path="res://.godot/imported/pipe_cornerDiagonal.obj-d51e574fdd735237639e007bc009a123.mesh"
+
+[deps]
+
+files=["res://.godot/imported/pipe_cornerDiagonal.obj-d51e574fdd735237639e007bc009a123.mesh"]
+
+source_file="res://model/pipe_cornerDiagonal.obj"
+dest_files=["res://.godot/imported/pipe_cornerDiagonal.obj-d51e574fdd735237639e007bc009a123.mesh", "res://.godot/imported/pipe_cornerDiagonal.obj-d51e574fdd735237639e007bc009a123.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

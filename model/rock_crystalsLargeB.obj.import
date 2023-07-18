@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://wa8ffoegfkbs"
+path="res://.godot/imported/rock_crystalsLargeB.obj-463b7c085ee5e3793672b9bfd69b06ad.mesh"
+
+[deps]
+
+files=["res://.godot/imported/rock_crystalsLargeB.obj-463b7c085ee5e3793672b9bfd69b06ad.mesh"]
+
+source_file="res://model/rock_crystalsLargeB.obj"
+dest_files=["res://.godot/imported/rock_crystalsLargeB.obj-463b7c085ee5e3793672b9bfd69b06ad.mesh", "res://.godot/imported/rock_crystalsLargeB.obj-463b7c085ee5e3793672b9bfd69b06ad.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

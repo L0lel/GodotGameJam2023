@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://s2egnschs7ti"
+path="res://.godot/imported/corridor_end.obj-4153f00df5e72d0673184980022a6e2e.mesh"
+
+[deps]
+
+files=["res://.godot/imported/corridor_end.obj-4153f00df5e72d0673184980022a6e2e.mesh"]
+
+source_file="res://model/corridor_end.obj"
+dest_files=["res://.godot/imported/corridor_end.obj-4153f00df5e72d0673184980022a6e2e.mesh", "res://.godot/imported/corridor_end.obj-4153f00df5e72d0673184980022a6e2e.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

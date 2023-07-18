@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bjrdq71yguhn8"
+path="res://.godot/imported/corridor_corner.obj-6c1d6ac86d32e9dcc1362a5b68b85ecf.mesh"
+
+[deps]
+
+files=["res://.godot/imported/corridor_corner.obj-6c1d6ac86d32e9dcc1362a5b68b85ecf.mesh"]
+
+source_file="res://model/corridor_corner.obj"
+dest_files=["res://.godot/imported/corridor_corner.obj-6c1d6ac86d32e9dcc1362a5b68b85ecf.mesh", "res://.godot/imported/corridor_corner.obj-6c1d6ac86d32e9dcc1362a5b68b85ecf.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

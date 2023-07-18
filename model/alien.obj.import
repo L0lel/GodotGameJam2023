@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://b3okr3wxk6f67"
+path="res://.godot/imported/alien.obj-97d158f40e389c283d0a76f8e7c4f0cb.mesh"
+
+[deps]
+
+files=["res://.godot/imported/alien.obj-97d158f40e389c283d0a76f8e7c4f0cb.mesh"]
+
+source_file="res://model/alien.obj"
+dest_files=["res://.godot/imported/alien.obj-97d158f40e389c283d0a76f8e7c4f0cb.mesh", "res://.godot/imported/alien.obj-97d158f40e389c283d0a76f8e7c4f0cb.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

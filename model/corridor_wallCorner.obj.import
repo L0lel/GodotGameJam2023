@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cohfi0k6nkwa8"
+path="res://.godot/imported/corridor_wallCorner.obj-182083a2135b70eff1c669fb38ce3da1.mesh"
+
+[deps]
+
+files=["res://.godot/imported/corridor_wallCorner.obj-182083a2135b70eff1c669fb38ce3da1.mesh"]
+
+source_file="res://model/corridor_wallCorner.obj"
+dest_files=["res://.godot/imported/corridor_wallCorner.obj-182083a2135b70eff1c669fb38ce3da1.mesh", "res://.godot/imported/corridor_wallCorner.obj-182083a2135b70eff1c669fb38ce3da1.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

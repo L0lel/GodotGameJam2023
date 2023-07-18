@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bq0pf7bk8g5r"
+path="res://.godot/imported/craft_cargoB.obj-23d5a9183acb1da374e5056ba8a21622.mesh"
+
+[deps]
+
+files=["res://.godot/imported/craft_cargoB.obj-23d5a9183acb1da374e5056ba8a21622.mesh"]
+
+source_file="res://model/craft_cargoB.obj"
+dest_files=["res://.godot/imported/craft_cargoB.obj-23d5a9183acb1da374e5056ba8a21622.mesh", "res://.godot/imported/craft_cargoB.obj-23d5a9183acb1da374e5056ba8a21622.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
