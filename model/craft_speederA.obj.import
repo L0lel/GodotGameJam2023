@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bo431x3815wka"
+path="res://.godot/imported/craft_speederA.obj-bdef73cb3a2437c1b77253586350b14a.mesh"
+
+[deps]
+
+files=["res://.godot/imported/craft_speederA.obj-bdef73cb3a2437c1b77253586350b14a.mesh"]
+
+source_file="res://model/craft_speederA.obj"
+dest_files=["res://.godot/imported/craft_speederA.obj-bdef73cb3a2437c1b77253586350b14a.mesh", "res://.godot/imported/craft_speederA.obj-bdef73cb3a2437c1b77253586350b14a.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

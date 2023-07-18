@@ -1,0 +1,48 @@
+[gd_scene load_steps=10 format=3 uid="uid://cgbly7kecve0c"]
+
+[ext_resource type="ArrayMesh" uid="uid://cfkgdb1f2ecro" path="res://model/terrain.obj" id="1_32uif"]
+[ext_resource type="ArrayMesh" uid="uid://bc6ggmun1x5b5" path="res://model/terrain_roadCross.obj" id="2_r5ihx"]
+[ext_resource type="ArrayMesh" uid="uid://nfkob5wbo8k1" path="res://model/terrain_roadEnd.obj" id="3_x8m40"]
+[ext_resource type="ArrayMesh" uid="uid://bcr8yyhuuycc" path="res://model/terrain_roadStraight.obj" id="4_65yjs"]
+[ext_resource type="ArrayMesh" uid="uid://reke6klsu5s5" path="res://model/terrain_ramp.obj" id="5_f6s7o"]
+[ext_resource type="ArrayMesh" uid="uid://er0r00ft78mn" path="res://model/terrain_rampLarge.obj" id="6_m1g3o"]
+[ext_resource type="ArrayMesh" uid="uid://mxruuag1eu7o" path="res://model/terrain_rampLarge_detailed.obj" id="7_67git"]
+[ext_resource type="ArrayMesh" uid="uid://dms0ur41qkxeh" path="res://model/terrain_sideEnd.obj" id="8_pqlh2"]
+[ext_resource type="ArrayMesh" uid="uid://dyyl4lvhpuav4" path="res://model/terrain_side.obj" id="9_tkr6h"]
+
+[node name="terrainTiles" type="Node3D"]
+
+[node name="Terrain" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_32uif")
+
+[node name="TerrainRoadCross" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+mesh = ExtResource("2_r5ihx")
+
+[node name="TerrainRoadEnd" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+mesh = ExtResource("3_x8m40")
+
+[node name="TerrainRoadStraight" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 0)
+mesh = ExtResource("4_65yjs")
+
+[node name="TerrainRamp" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+mesh = ExtResource("5_f6s7o")
+
+[node name="TerrainRampLarge" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1)
+mesh = ExtResource("6_m1g3o")
+
+[node name="TerrainRampLargeDetailed" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 1)
+mesh = ExtResource("7_67git")
+
+[node name="TerrainSideEnd" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 1)
+mesh = ExtResource("8_pqlh2")
+
+[node name="TerrainSide" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+mesh = ExtResource("9_tkr6h")

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://nmtipcar1hgs"
+path="res://.godot/imported/monorail_trainFront.obj-74512ca9206f064aa46cad7e53d1b431.mesh"
+
+[deps]
+
+files=["res://.godot/imported/monorail_trainFront.obj-74512ca9206f064aa46cad7e53d1b431.mesh"]
+
+source_file="res://model/monorail_trainFront.obj"
+dest_files=["res://.godot/imported/monorail_trainFront.obj-74512ca9206f064aa46cad7e53d1b431.mesh", "res://.godot/imported/monorail_trainFront.obj-74512ca9206f064aa46cad7e53d1b431.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

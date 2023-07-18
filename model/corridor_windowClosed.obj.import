@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cmbacispm5m0d"
+path="res://.godot/imported/corridor_windowClosed.obj-fbb0bcd04534e9415d3407759a3e8974.mesh"
+
+[deps]
+
+files=["res://.godot/imported/corridor_windowClosed.obj-fbb0bcd04534e9415d3407759a3e8974.mesh"]
+
+source_file="res://model/corridor_windowClosed.obj"
+dest_files=["res://.godot/imported/corridor_windowClosed.obj-fbb0bcd04534e9415d3407759a3e8974.mesh", "res://.godot/imported/corridor_windowClosed.obj-fbb0bcd04534e9415d3407759a3e8974.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

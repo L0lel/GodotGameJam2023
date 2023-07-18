@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dyo7pc3ma54yv"
+path="res://.godot/imported/craft_miner.obj-3c7f875d1fcc369bd43812cc0f50c3dd.mesh"
+
+[deps]
+
+files=["res://.godot/imported/craft_miner.obj-3c7f875d1fcc369bd43812cc0f50c3dd.mesh"]
+
+source_file="res://model/craft_miner.obj"
+dest_files=["res://.godot/imported/craft_miner.obj-3c7f875d1fcc369bd43812cc0f50c3dd.mesh", "res://.godot/imported/craft_miner.obj-3c7f875d1fcc369bd43812cc0f50c3dd.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

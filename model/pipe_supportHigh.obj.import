@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bk2jsd1e26b15"
+path="res://.godot/imported/pipe_supportHigh.obj-212547ba43721eb63b909d64969a4155.mesh"
+
+[deps]
+
+files=["res://.godot/imported/pipe_supportHigh.obj-212547ba43721eb63b909d64969a4155.mesh"]
+
+source_file="res://model/pipe_supportHigh.obj"
+dest_files=["res://.godot/imported/pipe_supportHigh.obj-212547ba43721eb63b909d64969a4155.mesh", "res://.godot/imported/pipe_supportHigh.obj-212547ba43721eb63b909d64969a4155.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://vj0hfn67frcs"
+path="res://.godot/imported/satelliteDish_large.obj-fe2290d9898ea960eee99b8227756c0c.mesh"
+
+[deps]
+
+files=["res://.godot/imported/satelliteDish_large.obj-fe2290d9898ea960eee99b8227756c0c.mesh"]
+
+source_file="res://model/satelliteDish_large.obj"
+dest_files=["res://.godot/imported/satelliteDish_large.obj-fe2290d9898ea960eee99b8227756c0c.mesh", "res://.godot/imported/satelliteDish_large.obj-fe2290d9898ea960eee99b8227756c0c.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

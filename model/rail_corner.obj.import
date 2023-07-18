@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://d0gnpben5s7hi"
+path="res://.godot/imported/rail_corner.obj-5f778205adc3917c042ab828d904f34a.mesh"
+
+[deps]
+
+files=["res://.godot/imported/rail_corner.obj-5f778205adc3917c042ab828d904f34a.mesh"]
+
+source_file="res://model/rail_corner.obj"
+dest_files=["res://.godot/imported/rail_corner.obj-5f778205adc3917c042ab828d904f34a.mesh", "res://.godot/imported/rail_corner.obj-5f778205adc3917c042ab828d904f34a.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

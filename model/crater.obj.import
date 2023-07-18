@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cpppc74uoq67k"
+path="res://.godot/imported/crater.obj-3721343598806770aa5b97f308002788.mesh"
+
+[deps]
+
+files=["res://.godot/imported/crater.obj-3721343598806770aa5b97f308002788.mesh"]
+
+source_file="res://model/crater.obj"
+dest_files=["res://.godot/imported/crater.obj-3721343598806770aa5b97f308002788.mesh", "res://.godot/imported/crater.obj-3721343598806770aa5b97f308002788.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

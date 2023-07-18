@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://dtsy32ou83fgs"]
+
+[ext_resource type="ArrayMesh" uid="uid://3qfy181cj5tx" path="res://model/monorail_trainCargo.obj" id="1_a1ahv"]
+[ext_resource type="ArrayMesh" uid="uid://blndn73td4o0e" path="res://model/rock_crystalsLargeA.obj" id="2_gjtqn"]
+
+[node name="FullCargo" type="Node3D"]
+
+[node name="MonorailTrainCargo" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_a1ahv")
+
+[node name="RockCrystalsLargeA" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.4, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0.4, 0.15)
+mesh = ExtResource("2_gjtqn")
+
+[node name="RockCrystalsLargeA2" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.4, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0.4, -0.15)
+mesh = ExtResource("2_gjtqn")

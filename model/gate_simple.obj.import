@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cpsg1futdvqbv"
+path="res://.godot/imported/gate_simple.obj-5a16e7e03e41fd65be9321fed72e0c28.mesh"
+
+[deps]
+
+files=["res://.godot/imported/gate_simple.obj-5a16e7e03e41fd65be9321fed72e0c28.mesh"]
+
+source_file="res://model/gate_simple.obj"
+dest_files=["res://.godot/imported/gate_simple.obj-5a16e7e03e41fd65be9321fed72e0c28.mesh", "res://.godot/imported/gate_simple.obj-5a16e7e03e41fd65be9321fed72e0c28.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
