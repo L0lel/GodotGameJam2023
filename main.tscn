@@ -1,8 +1,28 @@
-[gd_scene load_steps=2 format=3 uid="uid://oskjecuoexx0"]
+[gd_scene load_steps=5 format=3 uid="uid://b2ta3isl2huu1"]
 
-[ext_resource type="MeshLibrary" uid="uid://dwoq2d5mepjfb" path="res://terrain_tileset.meshlib" id="1_0rra3"]
+[ext_resource type="MeshLibrary" path="res://terrain_tileset.meshlib" id="1_0rra3"]
+[ext_resource type="PackedScene" uid="uid://ceio1ospuekto" path="res://spawn.tscn" id="1_lo8nw"]
+[ext_resource type="PackedScene" uid="uid://dms8mivb166i0" path="res://enemy.tscn" id="2_iu8op"]
+
+[sub_resource type="Curve3D" id="Curve3D_w5j0i"]
+_data = {
+"points": PackedVector3Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7.49644, 0, 3.10854, 0, 0, 5, 0, 0, 0, 0, 0, 0),
+"tilts": PackedFloat32Array(0, 0, 0)
+}
+point_count = 3
 
 [node name="main" type="Node3D"]
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(-1, 0, -8.74228e-08, -8.59494e-08, 0.182819, 0.983147, 1.59825e-08, 0.983147, -0.182819, 2, 5, 2)
+
+[node name="Percorso 1" type="Path3D" parent="."]
+curve = SubResource("Curve3D_w5j0i")
+
+[node name="spawn" parent="." node_paths=PackedStringArray("Path") instance=ExtResource("1_lo8nw")]
+enemyScene = ExtResource("2_iu8op")
+maxSpawn = 10
+Path = NodePath("../Percorso 1")
 
 [node name="GridMap" type="GridMap" parent="."]
 mesh_library = ExtResource("1_0rra3")
