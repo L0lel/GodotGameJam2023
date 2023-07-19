@@ -1,28 +1,38 @@
 [gd_scene load_steps=5 format=3 uid="uid://b2ta3isl2huu1"]
 
-[ext_resource type="MeshLibrary" path="res://terrain_tileset.meshlib" id="1_0rra3"]
 [ext_resource type="PackedScene" uid="uid://ceio1ospuekto" path="res://spawn.tscn" id="1_lo8nw"]
+[ext_resource type="PackedScene" uid="uid://c51d6v8mkut7c" path="res://train.tscn" id="1_xgqvw"]
 [ext_resource type="PackedScene" uid="uid://dms8mivb166i0" path="res://enemy.tscn" id="2_iu8op"]
 
 [sub_resource type="Curve3D" id="Curve3D_w5j0i"]
 _data = {
-"points": PackedVector3Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7.49644, 0, 3.10854, 0, 0, 5, 0, 0, 0, 0, 0, 0),
+"points": PackedVector3Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7.49644, 0, 3.10854, -0.0645811, 0, 8.19529, 0.0645811, 0, -8.19529, 0, 0, 0),
 "tilts": PackedFloat32Array(0, 0, 0)
 }
 point_count = 3
 
 [node name="main" type="Node3D"]
 
+[node name="Percorso 1" type="Path3D" parent="."]
+transform = Transform3D(0.320134, 0, -0.947372, 0, 1, 0, 0.947372, 0, 0.320134, 3.478, 0, 1.13367)
+curve = SubResource("Curve3D_w5j0i")
+
+[node name="PathFollow3D" type="PathFollow3D" parent="Percorso 1"]
+transform = Transform3D(-0.383039, 0, -0.923721, 0, 1, 0, 0.923721, 0, -0.383039, 6.44785, 0, 2.67372)
+progress = 6.98008
+
+[node name="Train" parent="Percorso 1/PathFollow3D" instance=ExtResource("1_xgqvw")]
+transform = Transform3D(-0.997742, 0, -0.0671667, 0, 1, 0, 0.0671667, 0, -0.997742, 0.219452, 0, 1.10487)
+
 [node name="Camera3D" type="Camera3D" parent="."]
 transform = Transform3D(-1, 0, -8.74228e-08, -8.59494e-08, 0.182819, 0.983147, 1.59825e-08, 0.983147, -0.182819, 2, 5, 2)
 
-[node name="Percorso 1" type="Path3D" parent="."]
-curve = SubResource("Curve3D_w5j0i")
-
 [node name="spawn" parent="." node_paths=PackedStringArray("Path") instance=ExtResource("1_lo8nw")]
 enemyScene = ExtResource("2_iu8op")
-maxSpawn = 10
-Path = NodePath("../Percorso 1")
+Path = NodePath("Percorso 1")
 
-[node name="GridMap" type="GridMap" parent="."]
-mesh_library = ExtResource("1_0rra3")
+[node name="Percorso 1" type="Path3D" parent="spawn"]
+curve = SubResource("Curve3D_w5j0i")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 2, 5, 2)
