@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://ceio1ospuekto" path="res://spawn.tscn" id="1_lo8nw"]
 [ext_resource type="PackedScene" uid="uid://dms8mivb166i0" path="res://enemy.tscn" id="2_iu8op"]
-[ext_resource type="MeshLibrary" path="res://tileset.meshlib" id="3_ngwpg"]
+[ext_resource type="MeshLibrary" uid="uid://ycm80u5k8404" path="res://tileset.meshlib" id="3_ngwpg"]
 
 [sub_resource type="Curve3D" id="Curve3D_w5j0i"]
 _data = {
@@ -27,7 +27,7 @@ curve = SubResource("Curve3D_w5j0i")
 mesh_library = ExtResource("3_ngwpg")
 cell_size = Vector3(1, 1, 1)
 data = {
-"cells": PackedInt32Array(0, 0, 8, 786434, 2, 7, 786434, 3, 8, 786434, 4, 8, 0, 1, 8, 0, 2, 8, 4, 1, 9, 4, 0, 9, 4, 65535, 9, 4, 65534, 9, 4, 2, 9, 4, 3, 9, 4, 4, 9, 4, 5, 9)
+"cells": PackedInt32Array(0, 0, 8, 786434, 2, 7, 786434, 3, 8, 786434, 4, 8, 0, 1, 8, 0, 2, 8, 4, 1, 9, 4, 0, 9, 4, 65535, 9, 4, 65534, 9, 4, 2, 9, 4, 3, 9, 4, 4, 9, 4, 5, 9, 2, 65531, 0)
 }
 metadata/_editor_floor_ = Vector3(0, 0, 0)
 
