@@ -15,5 +15,8 @@ func add_wagon(wagon, pos) -> void:
 	$"..".add_child(wag)
 
 func _physics_process(delta) -> void:
+	i -= 1
+	if i == -2 :
+		add_wagon(wagons.med_cargo, 0)
 
 	$"..".progress += vel * delta
