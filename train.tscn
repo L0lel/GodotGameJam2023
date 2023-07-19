@@ -15,9 +15,3 @@ mesh = ExtResource("1_j13n1")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 shape = SubResource("ConvexPolygonShape3D_vq653")
-
-[node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(-6.73713e-08, -0.258819, 0.965926, 2.11385e-08, 0.965926, 0.258819, -1, 3.78552e-08, -5.96046e-08, 2, 2, 0)
-
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, 0, 3, 0)

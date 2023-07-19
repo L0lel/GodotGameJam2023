@@ -19,7 +19,10 @@ var i = 0
 func add_wagon(wagon) -> void:
 	add_child(wagon.instantiate())
 
-func _physics_process(delta):
+
+
+func _physics_process(delta) -> void:
 	i += 1
 	if i == 2 :
 		add_wagon(wagons.small_cargo)
+	$"..".progress += 1 * delta
