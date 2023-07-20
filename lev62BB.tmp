@@ -56,6 +56,7 @@ data = {
 }
 
 [node name="scenario" type="GridMap" parent="."]
+visible = false
 mesh_library = ExtResource("2_0tbxy")
 cell_size = Vector3(1, 0.5, 1)
 cell_center_y = false
@@ -118,6 +119,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 0, 11)
 
 [node name="Torretta" parent="." instance=ExtResource("11_5wptd")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+rotation_velocity = null
 
 [node name="Path3D" type="Path3D" parent="."]
 curve = SubResource("Curve3D_877q6")
