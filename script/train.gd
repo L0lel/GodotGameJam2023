@@ -2,7 +2,7 @@ extends CharacterBody3D
 
 @export var vel : int 
 
-var wagons = preload("res://train_utils.gd").new()
+var wagons = preload("res://script/train_utils.gd").new()
 
 
 var i = 0
@@ -17,6 +17,6 @@ func add_wagon(wagon, pos) -> void:
 func _physics_process(delta) -> void:
 	i -= 1
 	if i == -2 :
-		add_wagon(wagons.med_cargo, 0)
-
+		add_wagon(wagons.med_cargo, 1)
+		
 	$"..".progress += vel * delta
