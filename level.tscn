@@ -1,14 +1,15 @@
-[gd_scene load_steps=13 format=3 uid="uid://defwdk7lndxjf"]
+[gd_scene load_steps=14 format=3 uid="uid://defwdk7lndxjf"]
 
-[ext_resource type="MeshLibrary" uid="uid://dwoq2d5mepjfb" path="res://terrain_tileset.meshlib" id="1_keuq0"]
-[ext_resource type="MeshLibrary" uid="uid://ycm80u5k8404" path="res://tileset.meshlib" id="2_0tbxy"]
+[ext_resource type="MeshLibrary" uid="uid://dwoq2d5mepjfb" path="res://tileset/terrain_tileset.meshlib" id="1_mm4pj"]
+[ext_resource type="MeshLibrary" uid="uid://ycm80u5k8404" path="res://tileset/tileset.meshlib" id="2_0tbxy"]
 [ext_resource type="ArrayMesh" uid="uid://mf38xc5xwup6" path="res://model/rocket_baseA.obj" id="3_4srxm"]
 [ext_resource type="ArrayMesh" uid="uid://crt4x424uhbno" path="res://model/rocket_finsA.obj" id="4_crsjr"]
 [ext_resource type="ArrayMesh" uid="uid://bp8lp1y07w26g" path="res://model/rocket_sidesA.obj" id="5_3gx2y"]
 [ext_resource type="ArrayMesh" uid="uid://djqv14hoj315y" path="res://model/rocket_fuelB.obj" id="6_xuh8s"]
 [ext_resource type="ArrayMesh" uid="uid://1vplykt4of2c" path="res://model/rocket_topA.obj" id="7_cuxpl"]
 [ext_resource type="ArrayMesh" uid="uid://dgsb7jbtx75u4" path="res://model/hangar_largeA.obj" id="9_ehk7m"]
-[ext_resource type="PackedScene" uid="uid://dsfajy6b22k0y" path="res://model/composite_models/torretta.tscn" id="11_5wptd"]
+[ext_resource type="PackedScene" uid="uid://dsfajy6b22k0y" path="res://entity/torretta.tscn" id="11_5wptd"]
+[ext_resource type="PackedScene" uid="uid://c51d6v8mkut7c" path="res://entity/train.tscn" id="11_vu8i1"]
 [ext_resource type="PackedScene" uid="uid://b8ujrrnvs5m1e" path="res://model/composite_models/mine.tscn" id="12_h0vhv"]
 
 [sub_resource type="Environment" id="Environment_3vbqv"]
@@ -45,7 +46,7 @@ point_count = 38
 environment = SubResource("Environment_3vbqv")
 
 [node name="terreno" type="GridMap" parent="."]
-mesh_library = ExtResource("1_keuq0")
+mesh_library = ExtResource("1_mm4pj")
 cell_size = Vector3(1, 0.5, 1)
 cell_center_y = false
 data = {
@@ -118,3 +119,12 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 
 [node name="Path3D" type="Path3D" parent="."]
 curve = SubResource("Curve3D_877q6")
+
+[node name="PathFollow3D" type="PathFollow3D" parent="Path3D"]
+transform = Transform3D(0.999999, 0, 0, 0, 0.999998, -0.00142857, 0, 0.00142857, 0.999999, 10.5, 0.00244673, -1.21271)
+progress = 1.71274
+rotation_mode = 4
+
+[node name="Train" parent="Path3D/PathFollow3D" instance=ExtResource("11_vu8i1")]
+transform = Transform3D(1, -2.91038e-11, 0, 2.91038e-11, 1, 0, 0, 0, 1, -0.0383982, 0.0645508, -1.0001)
+vel = -5
