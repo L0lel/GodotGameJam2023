@@ -2,12 +2,14 @@ extends Node3D
 
 
 @export var enemyScene : PackedScene
-@export var spawn: int
-@export var timer = 2.0  
+@export var maxSpawn: int
+@export var spawn_time = 2.0  
+@export var horde_time = 2.0  
 
 @export var Path: Path3D
 
-var spawnTimer = 0.0
+var spawnTimer = spawn_time
+var hordeTimer = horde_time
 var spawnCount = 0
 
 func _createPath(enemy, pat):
@@ -20,9 +22,17 @@ func _createPath(enemy, pat):
 
 
 func _process(delta):
+	hordeTimer += delta
 	spawnTimer += delta
 	
-	if spawnTimer >= timer :
+	if hordeTimer >= horde_time :
+		hordeTimer = 0.0
+		spawnCount = 0
+		
+		
+	
+	if spawnTimer >= spawn_time and maxSpawn > spawnCount:
+		print(spawnCount)
 		var pat = Path.duplicate() 
 		spawnTimer = 0.0
 		spawnCount += 1
@@ -34,4 +44,3 @@ func _process(delta):
 		add_child(_createPath(enemy,pat))
 	else:
 		pass
-

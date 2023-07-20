@@ -18,17 +18,22 @@ transform = Transform3D(0.320134, 0, -0.947372, 0, 1, 0, 0.947372, 0, 0.320134, 
 curve = SubResource("Curve3D_w5j0i")
 
 [node name="PathFollow3D" type="PathFollow3D" parent="Percorso 1"]
-transform = Transform3D(-0.383039, 0, -0.923721, 0, 1, 0, 0.923721, 0, -0.383039, 6.44785, 0, 2.67372)
-progress = 6.98008
+transform = Transform3D(0.0543933, 0, 0.998518, 0, 1.00004, 0, -0.998518, 0, 0.0543933, 2.90856, 0, 4.6633)
+progress = 13.0293
+rotation_mode = 4
 
 [node name="Train" parent="Percorso 1/PathFollow3D" instance=ExtResource("1_xgqvw")]
-transform = Transform3D(-0.997742, 0, -0.0671667, 0, 1, 0, 0.0671667, 0, -0.997742, 0.219452, 0, 1.10487)
+transform = Transform3D(0.990978, 0, 0.13403, 0, 1, 0, -0.13403, 0, 0.990978, -0.073715, 0, 0.0172343)
+vel = 2
 
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(-1, 0, -8.74228e-08, -8.59494e-08, 0.182819, 0.983147, 1.59825e-08, 0.983147, -0.182819, 2, 5, 2)
+transform = Transform3D(-0.0774761, -0.170873, -0.982242, 0.0645115, 0.98228, -0.175968, 0.994905, -0.0769992, -0.0650799, -4.76888, 0, 2.24334)
 
 [node name="spawn" parent="." node_paths=PackedStringArray("Path") instance=ExtResource("1_lo8nw")]
 enemyScene = ExtResource("2_iu8op")
+maxSpawn = 10
+spawn_time = 0.5
+horde_time = 20.0
 Path = NodePath("Percorso 1")
 
 [node name="Percorso 1" type="Path3D" parent="spawn"]
