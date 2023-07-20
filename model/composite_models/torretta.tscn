@@ -1,0 +1,56 @@
+[gd_scene load_steps=4 format=3 uid="uid://dsfajy6b22k0y"]
+
+[ext_resource type="ArrayMesh" uid="uid://bbn0213dos32c" path="res://model/turret_single.obj" id="1_4q48q"]
+[ext_resource type="Script" path="res://model/composite_models/turret.gd" id="1_7dk46"]
+[ext_resource type="Script" path="res://turret_vision.gd" id="2_twis3"]
+
+[node name="Torretta" type="Node3D"]
+transform = Transform3D(-0.95424, 0, 0.299041, 0, 1, 0, -0.299041, 0, -0.95424, 0, 0, 0)
+script = ExtResource("1_7dk46")
+
+[node name="Turret" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_4q48q")
+
+[node name="visionCast" type="Node3D" parent="."]
+
+[node name="RayCast3D" type="RayCast3D" parent="visionCast"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+target_position = Vector3(0, 0, 10)
+collide_with_areas = true
+script = ExtResource("2_twis3")
+
+[node name="RayCast3D5" type="RayCast3D" parent="visionCast"]
+transform = Transform3D(0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, 0.965926, 0, 0.5, 0)
+target_position = Vector3(0, 0, 10)
+collide_with_areas = true
+script = ExtResource("2_twis3")
+
+[node name="RayCast3D6" type="RayCast3D" parent="visionCast"]
+transform = Transform3D(0.866025, 0, -0.5, 0, 1, 0, 0.5, 0, 0.866025, 0, 0.5, 0)
+target_position = Vector3(0, 0, 10)
+collide_with_areas = true
+script = ExtResource("2_twis3")
+
+[node name="RayCast3D7" type="RayCast3D" parent="visionCast"]
+transform = Transform3D(0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, 0.707107, 0, 0.5, 0)
+target_position = Vector3(0, 0, 10)
+collide_with_areas = true
+script = ExtResource("2_twis3")
+
+[node name="RayCast3D2" type="RayCast3D" parent="visionCast"]
+transform = Transform3D(0.965926, 0, 0.258819, 0, 1, 0, -0.258819, 0, 0.965926, 0, 0.5, 0)
+target_position = Vector3(0, 0, 10)
+collide_with_areas = true
+script = ExtResource("2_twis3")
+
+[node name="RayCast3D3" type="RayCast3D" parent="visionCast"]
+transform = Transform3D(0.866025, 0, 0.5, 0, 1, 0, -0.5, 0, 0.866025, 0, 0.5, 0)
+target_position = Vector3(0, 0, 10)
+collide_with_areas = true
+script = ExtResource("2_twis3")
+
+[node name="RayCast3D4" type="RayCast3D" parent="visionCast"]
+transform = Transform3D(0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 0, 0.5, 0)
+target_position = Vector3(0, 0, 10)
+collide_with_areas = true
+script = ExtResource("2_twis3")
