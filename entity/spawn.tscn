@@ -4,3 +4,6 @@
 
 [node name="spawn" type="Node3D"]
 script = ExtResource("1_r2edn")
+maxSpawn = null
+spawn_time = null
+horde_time = null

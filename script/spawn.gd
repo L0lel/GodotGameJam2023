@@ -1,4 +1,4 @@
-extends Node3D
+nds Node3D
 
 
 @export var enemyScene : PackedScene

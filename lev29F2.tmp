@@ -1,15 +1,14 @@
-[gd_scene load_steps=15 format=3 uid="uid://bno7tldkxt2j2"]
+[gd_scene load_steps=14 format=3 uid="uid://defwdk7lndxjf"]
 
-[ext_resource type="MeshLibrary" uid="uid://dwoq2d5mepjfb" path="res://tileset/terrain_tileset.meshlib" id="1_keuq0"]
-[ext_resource type="MeshLibrary" uid="uid://ycm80u5k8404" path="res://tileset/tileset.meshlib" id="2_0tbxy"]
+[ext_resource type="MeshLibrary" uid="uid://dwoq2d5mepjfb" path="res://terrain_tileset.meshlib" id="1_keuq0"]
+[ext_resource type="MeshLibrary" uid="uid://ycm80u5k8404" path="res://tileset.meshlib" id="2_0tbxy"]
 [ext_resource type="ArrayMesh" uid="uid://mf38xc5xwup6" path="res://model/rocket_baseA.obj" id="3_4srxm"]
 [ext_resource type="ArrayMesh" uid="uid://crt4x424uhbno" path="res://model/rocket_finsA.obj" id="4_crsjr"]
 [ext_resource type="ArrayMesh" uid="uid://bp8lp1y07w26g" path="res://model/rocket_sidesA.obj" id="5_3gx2y"]
 [ext_resource type="ArrayMesh" uid="uid://djqv14hoj315y" path="res://model/rocket_fuelB.obj" id="6_xuh8s"]
 [ext_resource type="ArrayMesh" uid="uid://1vplykt4of2c" path="res://model/rocket_topA.obj" id="7_cuxpl"]
 [ext_resource type="ArrayMesh" uid="uid://dgsb7jbtx75u4" path="res://model/hangar_largeA.obj" id="9_ehk7m"]
-[ext_resource type="PackedScene" uid="uid://dsfajy6b22k0y" path="res://entity/torretta.tscn" id="11_5wptd"]
-[ext_resource type="PackedScene" uid="uid://c51d6v8mkut7c" path="res://entity/train.tscn" id="11_vu8i1"]
+[ext_resource type="PackedScene" uid="uid://dsfajy6b22k0y" path="res://model/composite_models/torretta.tscn" id="11_5wptd"]
 [ext_resource type="PackedScene" uid="uid://b8ujrrnvs5m1e" path="res://model/composite_models/mine.tscn" id="12_h0vhv"]
 
 [sub_resource type="Environment" id="Environment_3vbqv"]
@@ -57,6 +56,7 @@ data = {
 }
 
 [node name="scenario" type="GridMap" parent="."]
+visible = false
 mesh_library = ExtResource("2_0tbxy")
 cell_size = Vector3(1, 0.5, 1)
 cell_center_y = false
@@ -122,12 +122,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 
 [node name="Path3D" type="Path3D" parent="."]
 curve = SubResource("Curve3D_877q6")
-
-[node name="PathFollow3D" type="PathFollow3D" parent="Path3D"]
-transform = Transform3D(0.707107, -0.00499988, 0.707089, 0, 0.999975, 0.00707089, -0.707107, -0.00499988, 0.707089, 10.5, 0.005, -3)
-
-[node name="Train" parent="Path3D/PathFollow3D" instance=ExtResource("11_vu8i1")]
-vel = -5
 
 [node name="enemytest" type="CharacterBody3D" parent="." groups=["enemies"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, 3)
