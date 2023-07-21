@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://xgvujylikf1m"]
+
+[ext_resource type="Script" path="res://script/wagon.gd" id="1_bmjhg"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ndktb"]
+size = Vector3(0.512502, 0.686621, 0.919236)
+
+[node name="wagon" type="CharacterBody3D"]
+script = ExtResource("1_bmjhg")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.003, 0.316038, 0)
+shape = SubResource("BoxShape3D_ndktb")

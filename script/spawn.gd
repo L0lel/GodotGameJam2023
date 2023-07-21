@@ -1,4 +1,4 @@
-nds Node3D
+extends Node3D
 
 
 @export var enemyScene : PackedScene
@@ -12,6 +12,7 @@ var spawnTimer = spawn_time
 var hordeTimer = horde_time
 var spawnCount = 0
 
+var c = preload("res://model/composite_models/big_turret_train.tscn")
 func _createPath(enemy, pat):
 	
 	pat.add_child(PathFollow3D.new())
@@ -22,6 +23,7 @@ func _createPath(enemy, pat):
 
 
 func _process(delta):
+	print(enemyScene)
 	hordeTimer += delta
 	spawnTimer += delta
 	

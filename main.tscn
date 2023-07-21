@@ -1,7 +1,6 @@
-[gd_scene load_steps=5 format=3 uid="uid://b2ta3isl2huu1"]
+[gd_scene load_steps=4 format=3 uid="uid://b2ta3isl2huu1"]
 
 [ext_resource type="PackedScene" uid="uid://ceio1ospuekto" path="res://entity/spawn.tscn" id="1_lo8nw"]
-[ext_resource type="PackedScene" uid="uid://c51d6v8mkut7c" path="res://entity/train.tscn" id="1_xgqvw"]
 [ext_resource type="PackedScene" uid="uid://dms8mivb166i0" path="res://entity/enemy.tscn" id="2_iu8op"]
 
 [sub_resource type="Curve3D" id="Curve3D_w5j0i"]
@@ -13,31 +12,19 @@ point_count = 3
 
 [node name="main" type="Node3D"]
 
-[node name="Percorso 1" type="Path3D" parent="."]
-transform = Transform3D(0.320134, 0, -0.947372, 0, 1, 0, 0.947372, 0, 0.320134, 3.478, 0, 1.13367)
-curve = SubResource("Curve3D_w5j0i")
-
-[node name="PathFollow3D" type="PathFollow3D" parent="Percorso 1"]
-transform = Transform3D(0.0543933, 0, 0.998518, 0, 1.00004, 0, -0.998518, 0, 0.0543933, 2.90856, 0, 4.6633)
-progress = 13.0293
-rotation_mode = 4
-
-[node name="Train" parent="Percorso 1/PathFollow3D" instance=ExtResource("1_xgqvw")]
-transform = Transform3D(0.990978, 0, 0.13403, 0, 1, 0, -0.13403, 0, 0.990978, -0.073715, 0, 0.0172343)
-vel = 2
-
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(-0.0774761, -0.170873, -0.982242, 0.0645115, 0.98228, -0.175968, 0.994905, -0.0769992, -0.0650799, -4.76888, 0, 2.24334)
+transform = Transform3D(0.0687821, 0.990359, -0.120241, 0.0737109, 0.115152, 0.990609, 0.994905, -0.0769992, -0.0650799, 0.567457, 5.51455, 7.22943)
 
-[node name="spawn" parent="." node_paths=PackedStringArray("Path") instance=ExtResource("1_lo8nw")]
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 2, 5, 2)
+
+[node name="spawn2" parent="." node_paths=PackedStringArray("Path") instance=ExtResource("1_lo8nw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 6.79945)
 enemyScene = ExtResource("2_iu8op")
 maxSpawn = 10
 spawn_time = 0.5
 horde_time = 20.0
 Path = NodePath("Percorso 1")
 
-[node name="Percorso 1" type="Path3D" parent="spawn"]
+[node name="Percorso 1" type="Path3D" parent="spawn2"]
 curve = SubResource("Curve3D_w5j0i")
-
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 2, 5, 2)

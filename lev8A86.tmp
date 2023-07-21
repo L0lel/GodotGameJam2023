@@ -119,16 +119,15 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 0, 11)
 
 [node name="Torretta" parent="." instance=ExtResource("11_5wptd")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+rotation_velocity = null
 
-[node name="convoglio" type="Node3D" parent="."]
-
-[node name="Path3D" type="Path3D" parent="convoglio"]
+[node name="Path3D" type="Path3D" parent="."]
 curve = SubResource("Curve3D_877q6")
 
-[node name="PathFollow3D" type="PathFollow3D" parent="convoglio/Path3D"]
-transform = Transform3D(0.707107, -0.00499987, 0.707088, 0, 0.999975, 0.00707088, -0.707107, -0.00499987, 0.707088, 10.5, 0.005, -3)
+[node name="PathFollow3D" type="PathFollow3D" parent="Path3D"]
+transform = Transform3D(0.707107, -0.00499988, 0.707089, 0, 0.999975, 0.00707089, -0.707107, -0.00499988, 0.707089, 10.5, 0.005, -3)
 
-[node name="Train" parent="convoglio/Path3D/PathFollow3D" instance=ExtResource("11_vu8i1")]
+[node name="Train" parent="Path3D/PathFollow3D" instance=ExtResource("11_vu8i1")]
 vel = -5
 
 [node name="enemytest" type="CharacterBody3D" parent="." groups=["enemies"]]
